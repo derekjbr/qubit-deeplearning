@@ -1,0 +1,7 @@
+README.md
+setup.py
+gym_qubit.egg-info/PKG-INFO
+gym_qubit.egg-info/SOURCES.txt
+gym_qubit.egg-info/dependency_links.txt
+gym_qubit.egg-info/requires.txt
+gym_qubit.egg-info/top_level.txt
