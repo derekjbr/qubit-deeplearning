@@ -9,6 +9,8 @@ from stable_baselines.common.tf_layers import conv, linear, conv_to_fc, lstm
 from gym_qubit.envs.qubit_env import QubitEnv
 import tensorflow as tf
 
+#Attempt of recreating Noahs implementation of a custom policy
+
 class CustomPolicy(ActorCriticPolicy):
     def __init__(self, sess, ob_space, ac_space, n_env, n_steps, n_batch, reuse=False, layers=None, net_arch=None,
                         act_fun=tf.tanh, **kwargs):
@@ -35,6 +37,7 @@ env_vec = make_vec_env(lambda: env, n_envs=30)
 
 policy_kwargs = dict(act_fun=tf.nn.tanh, net_arch=[32, 32])
 
+#Base test
 model = PPO2(MlpPolicy, env_vec, verbose=1, policy_kwargs=policy_kwargs)
 model.learn(total_timesteps=50000)
 
