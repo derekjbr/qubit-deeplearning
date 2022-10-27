@@ -1,4 +1,4 @@
-"# qubit-deeplearning" 
+# qubit-deeplearning
 
 Dependencies:
 pip install gym
